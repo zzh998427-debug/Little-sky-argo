@@ -1,10 +1,13 @@
 {
-  "name": "nodejs-argo",
-  "version": "1,0,0",
-  "description": "Thsi is a node project",
+  "name": "gorge-argo",
+  "version": "2.0.0",
+  "description": "Railway-based VPN with enhanced obfuscation: XTLS-REALITY, randomized WS paths, multi-DoH DNS, subscription token auth",
   "main": "index.js",
   "author": "eooce",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/你的用户名/gorge-argo.git"
+  },
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -12,10 +15,10 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "axios": "latest",
+    "axios": "^1.6.0",
     "express": "^4.18.2"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   }
 }
