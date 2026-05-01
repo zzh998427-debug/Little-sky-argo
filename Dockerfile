@@ -12,4 +12,7 @@ RUN apk update && apk upgrade &&\
     chmod +x index.js &&\
     npm install
 
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+  CMD curl -f http://localhost:3000/ || exit 1
+
 CMD ["node", "index.js"]
